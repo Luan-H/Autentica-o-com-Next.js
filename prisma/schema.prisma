@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://o3n5d06siuhos31cpf6l:pscale_pw_sJAt8OGs7aDe10aKEQwINY5wo3pkMJRQrKvRAyKWlHc@aws.connect.psdb.cloud/users?sslaccept=strict"
+  url      = env("DATABASE_URL")
 }
 
 model users{
